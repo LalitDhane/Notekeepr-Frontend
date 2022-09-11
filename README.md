@@ -4,7 +4,7 @@ Notekeepr is a web application which saves all your notes and it also keeps trac
 
 ## Live Demo
 
-<a href = "https://notekeeprmern.herokuapp.com/">Click Here</a>
+<a href = "https://notekeepr-frontend.vercel.app/">Click Here</a>
 
 ### Features
 
