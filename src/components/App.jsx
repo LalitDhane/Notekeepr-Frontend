@@ -7,7 +7,7 @@ import Form from "./Form";
 export default function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    Axios.get("https://notekeepr-production.up.railway.app/api/notes")
+    Axios.get("https://notekeep-backend.onrender.com/api/notes")
       .then((res) => {
         setData(res.data);
       })
@@ -15,13 +15,13 @@ export default function App() {
   });
 
   function saveData(note) {
-    Axios.post("https://notekeepr-production.up.railway.app/api/notes", note).catch((err) =>
+    Axios.post("https://notekeep-backend.onrender.com/api/notes", note).catch((err) =>
       console.log(err)
     );
   }
 
   function deleteData(id) {
-    Axios.delete("https://notekeepr-production.up.railway.app/api/notes/" + id).catch(
+    Axios.delete("https://notekeep-backend.onrender.com/api/notes/" + id).catch(
       (err) => console.log(err)
     );
   }
